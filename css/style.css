@@ -109,6 +109,9 @@ a:hover,a:active,a:focus{color:#124885;}
 	margin-left: 44px;
 	margin-bottom: 40px;
 }
+.m-bookshelf .u-bookshelf li:hover{
+	outline: 2px solid #ddd;
+}
 .m-bookshelf .u-bookshelf li:nth-child(3n+1){
 	margin-left: 0;
 }
