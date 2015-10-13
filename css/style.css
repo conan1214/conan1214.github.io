@@ -12,6 +12,10 @@ a:link{color:#0655CC;}
 a:visited{color:#ccc;}
 a:hover,a:active,a:focus{color:#124885;}
 
+body{
+	position: relative;
+	padding-bottom: 60px;
+}
 /*
  *  g-header
  */
@@ -33,7 +37,7 @@ a:hover,a:active,a:focus{color:#124885;}
  * g-container
  */
 .g-container{
-	margin: 15px auto;
+	margin: 15px auto 0;
 	width: 750px;
 	box-sizing: border-box;
 	border: 1px solid #ccc;
@@ -89,6 +93,10 @@ a:hover,a:active,a:focus{color:#124885;}
 .g-container .m-bookshelf{
 	margin-bottom: 40px;
 }
+.m-bookshelf h2 span{
+	font-size: 16px;
+	line-height: 1em;
+}
 .m-bookshelf h3 a:link,a:visited,a:hover,a:active{
 	color:#ccc;
 }
@@ -143,21 +151,20 @@ a:hover,a:active,a:focus{color:#124885;}
 /*  已借出  */
 .m-bookshelf .u-bookshelf li .lease{
 	position: absolute;
+	z-index: 2;
 	left: 0;
 	top:0;
-	z-index: 2;
+	box-sizing: border-box;
+	padding-top: 50%;
 	background-color: rgba(0,0,0,.8);
 	font-size: 32px;
-	line-height: 600%;
+	line-height: 1em;
 	text-align: center;
 	color: #ddd;
 }
-
-
-
-
-
-
+.m-bookshelf .u-bookshelf li .lease span{
+	font-size: 14px;
+}
 
 
 	/*
@@ -168,5 +175,22 @@ a:hover,a:active,a:focus{color:#124885;}
 }
 .g-container .m-appendix>p{
 	line-height: 1.8em;
-	margin-bottom:15px;
+	margin: 15px 0;
+}
+
+/*
+ * #footer
+ */
+#footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	min-height: 30px;
+	width: 100%;
+	margin-top: 10px;
+	background-color: #ccc;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	color:#666;
 }
